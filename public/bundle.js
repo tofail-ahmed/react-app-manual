@@ -7945,36 +7945,13 @@ var m = reactDomExports;
   };
 }
 
-const HelloWorld = () => {
-  return /*#__PURE__*/React.createElement("p", {}, "Hello world");
+const Home = () => {
+  return /*#__PURE__*/React.createElement("div", null, "This is home page");
 };
-const KirreMama = qs => {
-  return /*#__PURE__*/React.createElement("h1", {}, `kirre mama kemon asos  ${qs} `);
-};
-
-// const App = () => {
-
-//   return React.createElement(
-//     "h1",
-//     { style: { color: "green" } },
-//     "Hello, its root rendering",
-//     helloWorld(),
-
-//     kirreMama(),
-//   );
-// };
 
 const App = () => {
-  const customStyle = {
-    color: "green",
-    fontWeight: "bold",
-    fontSize: "18px"
-  };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
-    style: customStyle
-  }, "This is a fokira React App"), /*#__PURE__*/React.createElement(HelloWorld, null), /*#__PURE__*/React.createElement(KirreMama, {
-    qs: "heelo"
-  }));
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", null, "Hello world"), /*#__PURE__*/React.createElement(Home, null));
 };
+
 const root = client.createRoot(document.getElementById("root"));
 root.render( /*#__PURE__*/React.createElement(App, null));
